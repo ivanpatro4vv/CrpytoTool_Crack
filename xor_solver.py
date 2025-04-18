@@ -6,5 +6,6 @@ ciphertext = [100, 200, 50, 170]  # exemple de texte chiffré
 
 # Tester toutes les clés possibles
 for key in range(256):
+    
     decrypted = xor_decrypt(ciphertext, key)
     print(f'Key: {key}, Decrypted message: {decrypted}')
